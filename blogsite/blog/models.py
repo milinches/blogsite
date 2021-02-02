@@ -1,6 +1,10 @@
 from django.db import models
 
 # Create your models here.
+STATUS = (
+    (0, "Drafts"),
+    (1, "publish")
+)
 
 
 class Articles(models.Model):
@@ -9,6 +13,7 @@ class Articles(models.Model):
     body = models.TextField()
     updated_on = models.DateTimeField(auto_now_add=True)
     created_on = models.DateTimeField(auto_now_add=True)
+    status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
         ordering = ['-created_on']
