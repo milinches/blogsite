@@ -9,3 +9,8 @@ class ArticleList(generic.ListView):
     queryset = Articles.objects.filter(status=1).order_by('created_on')
     template_name = 'blog/article_list.html'
 
+
+class ArticleDetail(generic.DetailView):
+    model = Articles
+    template_name = 'blog/article_detail.html'
+
