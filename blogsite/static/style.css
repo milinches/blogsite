@@ -16,6 +16,15 @@
 }
 
 * {
-    font-family: 'Raleway', sans-serif;
-    background-color: #fdfdfd;
+    font-family: 'Rubik', sans-serif;
+}
+
+.card-title{
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.7em;
+    padding-bottom: 10px;
+}
+
+.card {
+        box-shadow: 0 16px 48px #E3E7EB;
 }

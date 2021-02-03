@@ -7,5 +7,5 @@ app_name = 'blog'
 
 urlpatterns = [
     path('', views.ArticleList.as_view(), name='article'),
-    path('<slug:slug>/', views.ArticleDetail.as_view(), name='post_detail'),
+    path('<slug:slug>/', views.ArticleDetail.as_view(), name='detail'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
