@@ -36,3 +36,15 @@
 .btn{
     margin-top: 40px;
 }
+
+.crying img{
+    width: 30%;
+    height: 30%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 720px) {
+    .crying img{
+        width: 100%;
+        height: 100%;
+}
