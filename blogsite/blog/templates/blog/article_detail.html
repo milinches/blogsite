@@ -4,7 +4,15 @@
 
 {% block content %}
 
-
+    <div class="col-md-5 mt-5 mx-auto">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h1 class="card-title">{{ object.title }}</h1>
+              <p class="card-text text-muted h6">{{ object.created_on }}</p>
+            <p class="card-text" id="jff">{{ object.body | safe }}</p>
+          </div>
+        </div>
+    </div>
 
 {% endblock %}
 
