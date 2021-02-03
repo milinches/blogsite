@@ -4,13 +4,13 @@
 
 {% block content %}
 
-<div class="col-md-8 mt-5 mx-auto">
+<div class="col-md-7 mt-5 mx-auto">
 {% for article in article_list %}
     <div class="card mb-4">
       <div class="card-body">
         <h5 class="card-title">{{ article.title }}</h5>
           <p class="card-text text-muted h6">{{ article.created_on }}</p>
-        <p class="card-text" id="jkk">{{ article.body|slice:':200' }}...</p>
+        <p class="card-text" id="jkk">{{ article.body | safe | truncatechars:400}}</p>
         <a href="{% url 'blog:detail' article.slug %}" class="btn btn-primary">Read More</a>
       </div>
     </div>
