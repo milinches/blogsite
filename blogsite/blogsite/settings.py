@@ -127,20 +127,17 @@ STATIC_URL = '/static/'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'static'
+# STATICFILES_DIRS = [
+#     BASE_DIR / 'static'
+#
+# ]
 
-]
-
-STATIC_ROOT = [
-    BASE_DIR, 'staticfiles'
-]
-
-
-MEDIA_ROOT = [
-    BASE_DIR / 'media'
-]
+MEDIA_ROOT = BASE_DIR / 'media'
 
 MEDIA_URL = '/media/'
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
