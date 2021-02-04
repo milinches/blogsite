@@ -1,0 +1,76 @@
+.nav-item {
+    height: auto;
+    padding: 10px;
+    margin-right: 7rem;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif !important;
+    color: black;
+    font-size: 17px;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px !important;
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+.card-title {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.7em;
+    padding-bottom: 10px;
+}
+
+.card {
+    box-shadow: 0 16px 48px #E3E7EB;
+}
+
+#jkk {
+    padding-top: 25px;
+}
+
+.btn {
+    margin-top: 40px;
+}
+
+.crying img {
+    width: 30%;
+    height: 30%;
+    margin: auto;
+}
+
+.sm{
+    padding: 70px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+    .crying img {
+        width: 100%;
+        height: 100%;
+    }
+    .flex{
+        display: block;
+        width: 100%;
+
+    }
+}
+
+
+

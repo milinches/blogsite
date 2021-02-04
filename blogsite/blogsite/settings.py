@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '0v&idyjadbb65@#)-dfcle_c0g+3_#)i57)0pmu6e+utk!ru(f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['yrnx.herokuapp.com', '127.0.0.1']
 
@@ -127,17 +127,15 @@ STATIC_URL = '/static/'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / 'static'
-#
-# ]
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+
+]
 
 MEDIA_ROOT = BASE_DIR / 'media'
 
 MEDIA_URL = '/media/'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
